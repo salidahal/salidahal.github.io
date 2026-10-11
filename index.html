@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salina Dahal</title>
+  <meta name="description" content="Salina Dahal — co-founder and AI engineer at SEEN, a skin health startup in San Francisco, and research fellow at Q Labs." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%232f4a3a' font-family='Georgia,serif' font-size='14' font-weight='bold'>SD</text></svg>" />
+  <style>
+    :root {
+      --bg: #f1f4ef;
+      --text: #1e2621;
+      --muted: #6b766d;
+      --accent: #2f4a3a;
+      --link: #1e2621;
+      --link-hover: #4f6b5a;
+      --rule: #d9dfd5;
+      --portrait-bg: #e2e8de;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      line-height: 1.75;
+      padding: 5rem 1.5rem 4rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2.75rem;
+    }
+
+    .portrait {
+      position: relative;
+      flex-shrink: 0;
+      width: 116px;
+      height: 116px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--portrait-bg);
+      border: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .portrait .initials {
+      font-size: 1.5rem;
+      letter-spacing: 0.06em;
+      color: #9aa79c;
+    }
+
+    .portrait img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    header h1 {
+      font-size: 1.15rem;
+      font-weight: normal;
+      letter-spacing: 0.01em;
+      color: var(--accent);
+    }
+
+    header p.tagline {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+      font-family: 'Courier New', monospace;
+    }
+
+    section.bio {
+      margin-bottom: 2.5rem;
+    }
+
+    section.bio p {
+      font-size: 0.97rem;
+      margin-bottom: 1.1rem;
+    }
+
+    section.bio p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-color: #b5c0b3;
+      text-underline-offset: 3px;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration-color: var(--link-hover);
+    }
+
+    footer {
+      margin-top: 3rem;
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    footer a {
+      font-size: 0.82rem;
+      font-family: 'Courier New', monospace;
+      text-decoration: none;
+      color: var(--muted);
+      letter-spacing: 0.03em;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 3.5rem 1rem 3rem;
+      }
+
+      header {
+        gap: 1.25rem;
+      }
+
+      .portrait {
+        width: 96px;
+        height: 96px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="portrait">
+      <span class="initials">SD</span>
+      <img src="photo.jpg" alt="Salina Dahal" onerror="this.remove()" />
+    </div>
+    <div>
+      <h1>Salina Dahal</h1>
+      <p class="tagline">co-founder &amp; ai engineer</p>
+    </div>
+  </header>
+
+  <section class="bio">
+    <p>
+      I'm a co-founder and AI engineer at SEEN, a skin health startup in San Francisco.
+    </p>
+    <p>
+      I'm also a research fellow at <a href="https://qlabs.sh" target="_blank" rel="noopener">Q Labs</a>, a lab working on data efficiency and generalization in deep learning.
+    </p>
+    <p>
+      Before this, I was a software engineer at JPMorgan Chase. I studied computer science and engineering at The Ohio State University.
+    </p>
+  </section>
+
+  <footer>
+    <a href="mailto:salidahal3@gmail.com">email</a>
+  </footer>
+
+</body>
+</html>
